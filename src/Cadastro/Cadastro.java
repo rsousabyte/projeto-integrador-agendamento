@@ -9,12 +9,12 @@ public class Cadastro {
         System.out.println("Digite o Nome e Sobrenome: ");
         String nome = scanner.nextLine();
         while (nome.matches(".*[0-9].*")) {
-            System.out.println("Nome inválido. Não pode ter números: ");
+            System.out.println("Nome inválido. Use apenas letras e espaços: ");
             nome = scanner.nextLine();
         }
 
         System.out.println("Digite o email: ");
-        String email = scanner.nextLine();
+        String email = scanner.nextLine().trim().toLowerCase();
         while (!email.matches("[^@ ]+@[^@ ]+\\.[^@ ]+") || Dados.emails.contains(email)) {
             System.out.println("Email inválido ou já cadastrado. Digite novamente: ");
             email = scanner.nextLine().trim().toLowerCase();

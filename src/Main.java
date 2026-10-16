@@ -16,7 +16,7 @@ public class Main {
             System.out.print("\nPossui cadastro? (Sim/Não): ");
             String possui = scanner.nextLine();
             if (possui.equalsIgnoreCase("Sim")) {
-                logado = Login.executar(scanner);
+                logado = Login.executar(scanner) != null;
             } else if (possui.toLowerCase().startsWith("n") || possui.equalsIgnoreCase("Não") || possui.equalsIgnoreCase("Nao")) {
                 Cadastro.executar(scanner);
             } else {
