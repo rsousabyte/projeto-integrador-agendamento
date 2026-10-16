@@ -1,18 +1,15 @@
-# Arquivos compilados
 *.class
 
-# Pasta de saída do VSCode (se o seu projeto usar)
 bin/
 out/
 
-# Configurações da IDE
 .vscode/
 .idea/
 
-# Arquivos de build (Maven/Gradle)
 target/
 build/
 
-# Logs
 *.log
 *.db
+
+usuarios.txt
