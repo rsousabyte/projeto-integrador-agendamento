@@ -13,3 +13,6 @@ build/
 *.db
 
 usuarios.txt
+agendamentos.txt
+operacao.txt
+chegadas_saidas.txt
